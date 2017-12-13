@@ -1,0 +1,29 @@
+body {
+    background-color: lightyellow;
+    background-attachment: fixed;
+    background-image: url("../../ext/img/registration/banner.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+form {
+    opacity: 0.9;
+    position: absolute;
+    margin-top: 10%;
+    text-align: center;
+}
+
+form input {
+    width: 40%;
+    border-radius: 20%;
+}
+
+.width20{
+    width: 20%;
+}
+
+.inline{
+    display: inline;
+}

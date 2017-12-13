@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration debug="false" xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <appender name="common" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="src/main/logs/common.log"/>
+        <param name="MaxFileSize" value="10MB"/>
+        <param name="MaxBackupIndex" value="10"/>
+        <param name="Encoding" value="UTF-8"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{ISO8601}   [%-5p][%-16.16t][%30c{1}] - %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="general" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="src/main/logs/general.log"/>
+        <param name="MaxFileSize" value="10MB"/>
+        <param name="MaxBackupIndex" value="10"/>
+        <param name="Encoding" value="UTF-8"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{ISO8601}   [%-5p][%-16.16t][%30c{1}] - %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="test" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="src/main/logs/test.log"/>
+        <param name="MaxFileSize" value="10MB"/>
+        <param name="MaxBackupIndex" value="10"/>
+        <param name="Encoding" value="UTF-8"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{ISO8601}   [%-5p][%-16.16t][%30c{1}] - %m%n"/>
+        </layout>
+    </appender>
+
+    <logger name="com.littlejohnny.jdbc.DAOImpls.QuizDaoImplTest" additivity="false">
+        <level value="DEBUG"/>
+        <appender-ref ref="test"/>
+    </logger>
+
+    <logger name="com.littlejohnny">
+        <level value="DEBUG"/>
+        <appender-ref ref="general"/>
+    </logger>
+
+    <root>
+        <priority value="WARN"/>
+        <appender-ref ref="common"/>
+    </root>
+
+</log4j:configuration>

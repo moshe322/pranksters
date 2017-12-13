@@ -1,0 +1,147 @@
+body {
+    background-color: lavender;
+}
+
+
+header {
+    background-color: salmon;
+    border-radius: 50px;
+}
+
+
+/*navigation block*/
+
+
+#navigation {
+    padding: 5px 10px 5px 10px;
+}
+
+
+#freeplace {
+
+}
+
+#logedInWindow {
+    background-color: gainsboro;
+    border-radius: 50px;
+    border: double black;
+    text-align: center;
+}
+
+/*navigation panel*/
+
+#navpanel {
+    background-color: gainsboro;
+    border-radius: 50px;
+    border: double black;
+}
+#navpanel ul {
+    text-align: center;
+    padding: 7px 10px 0px 10px; 
+}
+
+#navpanel ul li {
+    display: inline;
+    margin: 0px 15px 0px 15px;
+}
+
+#navpanel ul li a {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  padding: 0px 10px;
+  line-height: 45px;
+  border-radius: 45px;
+  text-align: center;
+  color: #524f4e;
+  background: lightsalmon;
+  box-shadow: 0 8px 15px rgba(0,0,0,.1);
+  transition: .3s;
+}
+#navpanel ul li a:hover {
+  cursor: pointer;
+  background: #ffbb2c;
+  box-shadow: 0 15px 20px rgba(255,127,70,.4);
+  color: white;
+  transform: translateY(-7px);
+}
+
+#navpanel ul li a:active {
+  cursor: pointer;
+  background: lightsalmon;
+  color: white;
+}
+
+/*/navigation panel*/
+
+
+/*authorisation panel*/
+
+
+#authorization {
+}
+
+#authorization ul {
+    text-align: center;
+    padding: 7px 10px 0px 10px; 
+}
+
+#authorization ul li {
+    display: inline;
+    margin: 0px 15px 0px 15px;
+}
+
+
+#authorization ul li a {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 10px 5px;
+  margin: 5px 0px 0px 0px;
+  overflow: hidden;
+  border: 2px solid;
+  border-bottom-width: 4px;
+  font-weight: bold;
+  color: rgba(255,0,0,1);
+  background: rgba(255,255,255,1);
+  transition: color .3s, background .5s;
+}
+#authorization ul li a:hover {
+  cursor: pointer;
+  animation: stripes .75s infinite linear;
+  background: linear-gradient(45deg, rgba(255,187,44,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 50%, rgba(255,187,44,1) 50%, rgba(255,187,44,1) 75%, rgba(255,255,255,1) 75%, rgba(255,255,255,1));
+  background-size: 10px 10px;
+  color: #00FF00;
+}
+
+#authorization ul li a:active {
+  cursor: pointer;
+  color: #00FF00;
+  color: rgba(255,0,0,1);
+}
+
+@keyframes stripes {
+  0% {background-position: 0 0;}
+  100% {background-position: 50px 0;}
+}
+
+/*/authorisation panel*/
+
+/*/navigation block*/
+
+
+
+
+footer {
+    background-color: lavender;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+}
+
+
+
+
+

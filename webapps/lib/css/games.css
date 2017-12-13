@@ -1,0 +1,57 @@
+body {
+    background-color: papayawhip;
+    font-size: 0.8vw;
+}
+
+h2 {
+    font-size: 1.1vw;
+}
+
+header {
+    border: outset;
+    background-color: wheat;
+    border-radius: 70px;
+}
+
+#legend {
+    padding: 10px 20px;
+}
+
+#contentBox {
+    border: outset;
+    border-radius: 50px;
+    background-color: wheat;
+    padding: 5px;
+}
+
+#nav {
+    text-align: center;
+    background-color: khaki;
+    margin-left: 20px;
+    margin-right: 5px;
+    border: inset;
+    border-radius: 50px;
+}
+
+#content {
+    border: inset;
+    border-radius: 50px;
+}
+
+.element {
+    background-color: khaki;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: double;
+    border-radius: 50px;
+    margin-top: 5px;
+}
+
+.element img {
+    margin-left: 10px;
+}
+
+.elementButton {
+    margin: 5px;
+}
